@@ -1,1 +1,40 @@
 @charset "UTF-8";
+table{
+    width: 100%;
+    font-size: 18px;
+    /* 表を等間隔で配置 */
+    table-layout: fixed;
+    /* 隣り合う線を重ねて表示 */
+    border-collapse: collapse;
+}
+
+tr,th,td{
+    border: 1px solid #000000;
+}
+
+th{
+    background-color: #319c4a;
+    line-height: 26px;
+    padding: 10px;
+}
+
+td{
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 偶数列の背景色を指定 (odd)でも可*/
+tr:nth-child(2n){
+    background-color: #d5ffc7;
+}
+
+/* 奇数列の背景色を指定 (even)でも可*/
+tr:nth-child(2n+1){
+    background-color: #bcbcbc;
+}
+
+/* 最終列上部の線を指定 */
+tr:last-child{
+    border-top: 1px double rgb(255,255,255);
+}

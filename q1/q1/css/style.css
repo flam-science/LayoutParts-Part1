@@ -1,2 +1,90 @@
 @charset "UTF-8";
 /* 回答はここから */
+
+
+/* Q1-1共通部分 */
+.q1--horizontality p{
+    display: inline-block;
+    padding:10px;
+    background-color: #a4b3e9;
+    font-size: 16px;
+}
+
+.common-outer{
+    display: inline-block;
+    background-color: #fff;
+    width: 200px;
+    padding: 20px 0;
+}
+
+/* Q1-1:text-alignによる左右中央寄せ */
+.q1--align-outer{
+    text-align: center;
+}
+
+/* Q1-1:marginによる左右中央寄せ */
+.q1--margin-outer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.q1--margin-outer p{
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Q1-2:tableによる上下左右中央寄せ */
+.dtable{
+    display: table;
+}
+
+.table--csnter{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table--csnter p{
+    display: inline-block;
+    background-color: #fff;
+    padding:10px;
+    font-size: 16px;
+}
+
+/* Q1-3:flexによる上下左右中央寄せ */
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--text{
+    display: inline-block;
+    background-color: #fff;
+    padding:10px;
+    font-size: 16px;
+}
+
+/* Q1-4:positionによる上下左右中央寄せ */
+.q1--position{
+/* ↓位置を変えたい要素の基点とする↓ */
+    position: relative;
+    text-align: center;
+}
+
+
+.container p{
+    display: inline-block;
+    padding:10px;
+    background-color: #a4b3e9;
+    font-size: 16px;
+/* ↓要素を基点からどの程度変更するか指定する↓ */
+    position:absolute;
+/* ↓中央寄せしたい要素の始まりを調整する↓ */
+    top:50%;
+    left:50%;
+/* ↓要素の中央を中央寄せにする↓ */
+    transform:translate(-50%,-50%);
+}

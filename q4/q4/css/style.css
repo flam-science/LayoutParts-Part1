@@ -1,1 +1,57 @@
 @charset "UTF-8";
+
+table{
+    display: table;
+    width: 100%;
+}
+
+.dtable--top,.dtable--bottom{
+    table-layout: fixed;
+}
+
+.top{
+    margin-bottom: 50px;
+}
+
+td{
+    display: table-cell;
+}
+
+p{
+    padding:20px;
+    text-align: center;
+}
+
+.red{
+    background-color: #ff7b7b;
+}
+.purple{
+    background-color: #7b86ff;
+}
+.yellow{
+    background-color: #fff27b;
+}
+.green{
+    background-color: #7bff91;
+}
+.pink{
+    background-color: #ff7be2;
+}
+.orange{
+    background-color: #ffc67b;
+}
+.blue{
+    background-color: #7bf2ff;
+}
+
+
+.red,.yellow{
+    width: 300px;
+}
+.pink,.orange{
+    width: 400px;
+}
+
+.purple,.green,.blue{
+
+}
